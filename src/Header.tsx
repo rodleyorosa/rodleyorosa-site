@@ -1,7 +1,7 @@
-import { ArrowAbout } from "../assets/icons/ArrowAbout";
-import { GithubIcon } from "../assets/icons/social/GtihubIcon";
-import { InstagramIcon } from "../assets/icons/social/InstagramIcon";
-import { LinkedinIcon } from "../assets/icons/social/LinkedinIcon";
+import { ArrowAbout } from "./assets/icons/ArrowAbout";
+import { GithubIcon } from "./assets/icons/social/GtihubIcon";
+import { InstagramIcon } from "./assets/icons/social/InstagramIcon";
+import { LinkedinIcon } from "./assets/icons/social/LinkedinIcon";
 
 export const Header = () => {
   const scrollToAbout = (): void => {

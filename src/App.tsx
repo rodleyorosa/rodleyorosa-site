@@ -1,5 +1,6 @@
 import { About } from "./about/About";
-import { Header } from "./header/Header";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
 import { Portfolio } from "./portfolio/Portfolio";
 import { Resume } from "./resume/Resume";
 
@@ -10,6 +11,7 @@ function App() {
       <About />
       <Resume />
       <Portfolio />
+      <Footer />
     </div>
   );
 }
