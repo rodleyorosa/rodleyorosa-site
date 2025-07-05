@@ -7,6 +7,7 @@ import { TestingIcon } from "../assets/icons/technologies/TestingIcon";
 import { TypescriptIcon } from "../assets/icons/technologies/TypescriptIcon";
 import { VueIcon } from "../assets/icons/technologies/VueIcon";
 import profilePic from "../assets/profile-pic.jpeg";
+import { Wrapper } from "../components/Wrapper";
 import { Section } from "./Section";
 
 export const About = () => {
@@ -70,15 +71,7 @@ export const About = () => {
   ];
 
   return (
-    <div id="about" className="w-[80%] mx-auto max-w-[40rem] py-[7rem]">
-      <div className="flex flex-col gap-4">
-        <h4 className="font-poppins font-semibold text-[#ffbd39] text-sm uppercase tracking-[0.2rem] text-center">
-          about
-        </h4>
-        <h2 className="font-poppins font-semibold text-center text-2xl text-[#313131] md:text-4xl">
-          Let me introduce myself.
-        </h2>
-      </div>
+    <Wrapper title={"Let me introduce myself."} section={"about"}>
       <div className="flex flex-col gap-[3rem]">
         <div className="text-center mt-12 md:flex md:text-left md:gap-8 md:items-center">
           <img
@@ -110,6 +103,6 @@ export const About = () => {
           />
         </div>
       </div>
-    </div>
+    </Wrapper>
   );
 };
