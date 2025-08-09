@@ -1,14 +1,10 @@
 import React from "react";
 import { Timeline } from "./Timeline";
+import type { Experience } from "../types/types";
 
 interface TimelineSectionProps {
   title: string;
-  experiences: Array<{
-    location: string;
-    name: string;
-    description?: string;
-    date?: string;
-  }>;
+  experiences: Experience[];
   icon: React.JSX.Element;
 }
 

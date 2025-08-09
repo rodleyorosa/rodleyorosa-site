@@ -1,13 +1,9 @@
-import React from "react";
+import type { Profile } from "../types/types";
 
 interface SectionProps {
   title: string;
   description: string;
-  profileData: Array<{
-    label?: string;
-    value?: string;
-    icon?: React.JSX.Element;
-  }>;
+  profileData: Profile[];
 }
 
 export const Section = ({ title, description, profileData }: SectionProps) => {

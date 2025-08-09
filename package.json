@@ -6,6 +6,7 @@
   "homepage": "https://rodleyorosa.github.io/rodleyorosa-site",
   "scripts": {
     "dev": "vite",
+    "type-check": "tsc --noEmit",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",

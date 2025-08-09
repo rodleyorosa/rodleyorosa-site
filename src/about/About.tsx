@@ -8,10 +8,11 @@ import { TypescriptIcon } from "../assets/icons/technologies/TypescriptIcon";
 import { VueIcon } from "../assets/icons/technologies/VueIcon";
 import profilePic from "../assets/profile-pic.jpeg";
 import { Wrapper } from "../components/Wrapper";
+import type { Profile } from "../types/types";
 import { Section } from "./Section";
 
 export const About = () => {
-  const profileData = [
+  const profileData: Profile[] = [
     {
       label: "fullname",
       value: "Rodley Orosa",
@@ -30,7 +31,7 @@ export const About = () => {
     },
   ];
 
-  const skillsData = [
+  const skillsData: Profile[] = [
     {
       label: "html",
       icon: <HtmlIcon />,

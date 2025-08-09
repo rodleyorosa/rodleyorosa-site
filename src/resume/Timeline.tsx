@@ -1,4 +1,6 @@
 import React from "react";
+import type { Experience } from "../types/types";
+import { formatDate } from "../utils/utils";
 import {
   borderWidth,
   iconPadding,
@@ -6,14 +8,8 @@ import {
   timelineWidth,
 } from "./constants";
 
-// todo: improve date type
 interface TimelineProps {
-  experiences: Array<{
-    location: string;
-    name: string;
-    description?: string;
-    date?: string;
-  }>;
+  experiences: Experience[];
   icon: React.JSX.Element;
 }
 
@@ -45,7 +41,7 @@ export const Timeline = ({
                 {data.location}
               </h3>
               <p className="font-poppins text-[#888888] text-sm font-normal leading-[1.875rem]">
-                {data.date}
+                {`${formatDate(data.startDate)} - ${data.endDate ? formatDate(data.endDate) : 'Present'}`}
               </p>
             </div>
             <hr className="w-24 h-px border-none bg-[#00000066]" />
