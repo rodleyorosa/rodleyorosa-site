@@ -74,7 +74,7 @@ export const About = () => {
   return (
     <Wrapper title={"Let me introduce myself."} section={"about"}>
       <div className="flex flex-col gap-[3rem]">
-        <div className="text-center mt-12 md:flex md:text-left md:gap-8 md:items-center">
+        <div className="text-center mt-8 md:flex md:text-left md:gap-8 md:items-center">
           <img
             src={profilePic}
             className="w-20 h-20 mx-auto border border-[#00000019] rounded-full md:w-28 md:h-28"

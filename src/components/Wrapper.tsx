@@ -16,7 +16,7 @@ export const Wrapper = ({
 }: WrapperProps) => {
   return (
     <div id="about" {...rest}>
-      <div className="w-[80%] mx-auto max-w-[40rem] py-[7rem]">
+      <div className="w-[80%] mx-auto max-w-[40rem] py-[7rem] flex flex-col gap-4">
         <div className="flex flex-col gap-4">
           <h4 className="font-poppins font-semibold text-[#ffbd39] text-sm uppercase tracking-[0.2rem] text-center">
             {section}
@@ -30,7 +30,7 @@ export const Wrapper = ({
             </p>
           )}
         </div>
-        {children}
+        <div>{children}</div>
       </div>
     </div>
   );

@@ -1,16 +1,23 @@
+import winTracker from "../assets/win-tracker.jpg";
 import { Wrapper } from "../components/Wrapper";
+import type { CarouselItem } from "../types/types";
+import EmblaCarousel from "./EmblaCarousel";
 
-// TODO: add carousel
 export const Portfolio = (): React.JSX.Element => {
+  const carouselItems: CarouselItem[] = [
+    {
+      img: winTracker,
+      alt: "win-tracker",
+      link: "https://rodleyorosa.github.io/win-tracker/",
+    },
+  ];
   return (
     <Wrapper
       title="Check Out Some of My Works."
       section="portfolio"
       description="Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do."
     >
-      <p className="font-poppins text-[#313131] text-4xl font-semibold text-center pt-20 uppercase leading-[1.875rem]">
-        work in progress...
-      </p>
+      <EmblaCarousel carouselItems={carouselItems} />
     </Wrapper>
   );
 };

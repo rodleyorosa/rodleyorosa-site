@@ -29,9 +29,7 @@ export const Resume = () => {
       location: "ITS Last",
       name: "Digital Transformation Specialist",
       startDate: new Date(2021, 10),
-      endDate: new Date(
-      2023,7
-      ),
+      endDate: new Date(2023, 7),
     },
   ];
 

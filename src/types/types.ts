@@ -11,3 +11,9 @@ export type Experience = {
   startDate: Date;
   endDate: Date | null;
 };
+
+export type CarouselItem = {
+  img: string;
+  alt: string;
+  link: string;
+};
