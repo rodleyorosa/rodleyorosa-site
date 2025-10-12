@@ -21,14 +21,15 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           {carouselItems.map((item, index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__number">
-                <a href={item.link} target="_blank">
-                  <img  
+                <a href={item.link} target="_blank" title={item.alt}>
+                  <img
                     src={item.img}
                     alt={item.alt}
                     className="border border-[#00000019] rounded-md shadow-md"
                   />
                 </a>
               </div>
+              
             </div>
           ))}
         </div>

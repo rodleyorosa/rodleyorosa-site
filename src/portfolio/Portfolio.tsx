@@ -1,3 +1,4 @@
+import ideaBoard from "../assets/idea-board.jpg";
 import winTracker from "../assets/win-tracker.jpg";
 import { Wrapper } from "../components/Wrapper";
 import type { CarouselItem } from "../types/types";
@@ -9,6 +10,11 @@ export const Portfolio = (): React.JSX.Element => {
       img: winTracker,
       alt: "win-tracker",
       link: "https://rodleyorosa.github.io/win-tracker/",
+    },
+    {
+      img: ideaBoard,
+      alt: "idea-board",
+      link: "https://rodleyorosa.github.io/idea-board/",
     },
   ];
   return (
